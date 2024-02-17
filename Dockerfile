@@ -10,9 +10,6 @@ COPY data.txt .
 # Stage 2: Final Stage
 FROM fedora:latest
 
-# Set working directory
-WORKDIR /app
-
 # Copy data.txt from the builder stage to the final image
 COPY --from=builder /data.txt .
 
