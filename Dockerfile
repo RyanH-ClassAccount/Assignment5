@@ -14,7 +14,7 @@ FROM fedora:latest
 WORKDIR /app
 
 # Copy data.txt from the builder stage to the final image
-COPY --from=builder /app/data.txt .
+COPY --from=builder /data.txt .
 
 # Additional instructions for the final stage if needed
 
